@@ -1,0 +1,5 @@
+<h1>Low Quality Yelp</h1>
+<% @restaurants.each do |restaurant| %>
+  <li><%= link_to restaurant.name, restaurant_path(restaurant.id) %></li>
+<% end %>
+<%= link_to "makin a new resty", new_restaurant_path %>
